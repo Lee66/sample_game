@@ -1,0 +1,14 @@
+.top .top_left{
+    width: 20%;
+}
+.top .top_left dl{
+    width: inherit;
+    height: 30px;
+}
+.top .top_left dl dt{
+    width:auto;
+}
+.top .top_left dl dd{
+    width: auto;
+}
+
