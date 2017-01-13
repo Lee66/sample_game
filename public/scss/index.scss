@@ -27,8 +27,10 @@ li {
             ul {
                 li {
                     height: 130px;
-                    width: 140px;
+                    text-align: center;
+                    line-height: 130px;
                     input {
+                        width: 140px;
                         display: inline-block;
                         height: 100px;
                         border-left: 5px solid darkgrey;
@@ -36,8 +38,27 @@ li {
                         border-top: 5px solid beige;
                         border-bottom: 5px solid blue;
                         border-radius: 10px;
+                        text-align: center;
                         outline: none;
-//                      font-size: 4px;
+                        font-size: 50px;
+                        background: transparent;
+                        text-shadow: -1px -1px rgba(197, 223, 248,0.8),-2px -2px rgba(197, 223, 248,0.8),-3px -3px rgba(197, 223, 248,0.8),-4px -4px rgba(197, 223, 248,0.8),-5px -5px rgba(197, 223, 248,0.8),-6px -6px rgba(197, 223, 248,0.8);
+
+                    }
+                    &:nth-child(2) {
+                        span {
+                            display: inline-block;
+                            height: 100px;
+                            width: 100px;
+                            font-size: 60px;
+                            text-align: center;
+                            line-height: 100px;
+                            border-left: 5px solid darkgrey;
+                            border-right: 5px solid red;
+                            border-top: 5px solid beige;
+                            border-bottom: 5px solid blue;
+                            border-radius: 10px;
+                        }
                     }
                 }
             }
@@ -59,10 +80,12 @@ li {
             background: transparent;
             box-shadow: 0 0 30px rosybrown;
             border-radius: 20px;
-            border-left: 5px solid darkgrey;
-            border-right: 5px solid red;
-            border-top: 5px solid beige;
-            border-bottom: 5px solid blue;
+            border-left: 15px solid darkgrey;
+            border-right: 15px solid red;
+            border-top: 15px solid beige;
+            border-bottom: 15px solid blue;
+            text-shadow: -1px -1px rgba(197, 223, 248,0.8),-2px -2px rgba(197, 223, 248,0.8),-3px -3px rgba(197, 223, 248,0.8),-4px -4px rgba(197, 223, 248,0.8),-5px -5px rgba(197, 223, 248,0.8),-6px -6px rgba(197, 223, 248,0.8);
+
         }
         p {
 
@@ -196,7 +219,11 @@ li {
             li {
                 height: 280px;
                 width: 220px;
-                border: 1px solid red;
+                border-radius: 20px;
+                border-left: 5px solid darkgrey;
+                border-right: 5px solid darkgrey;
+                border-top: 5px solid beige;
+                border-bottom: 5px solid beige;
                 img {
                     display: block;
                     height: inherit;
@@ -224,25 +251,31 @@ li {
 
 .footer {
     height: 300px;
-    border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     p {
         width: 90px;
-        background: yellow;
+        //      background: yellow;
         border-radius: 10px;
         font-size: 20px;
+        border-radius: 20px;
+        border-left: 5px solid darkgrey;
+        border-right: 5px solid darkgrey;
+        border-top: 5px solid beige;
+        border-bottom: 5px solid beige;
+        margin: 8px;
         span {
             display: inline-block;
             height: 28px;
             width: 28px;
             border-radius: 50%;
-            border: 1px solid red;
             text-align: center;
             line-height: 30px;
             font-size: 16px;
+            border-radius: 20px;
+            color: blueviolet;
         }
     }
 
