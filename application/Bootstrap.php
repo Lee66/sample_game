@@ -25,5 +25,11 @@ class Bootstrap extends Yaf_Bootstrap_Abstract
         Yaf_Registry::set('db', new Dbh($db));
 
         Yaf_Registry::set('config', $config);
+
+
+    }
+    public function _initDefaultName(Yaf_Dispatcher $dispatcher)
+    {
+        $dispatcher->setDefaultController("Index")->setDefaultAction("login");
     }
 }
