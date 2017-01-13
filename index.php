@@ -10,11 +10,11 @@ ini_set('display_errors',1);
 error_reporting(0);
 
 define('APPLICATION_PATH', __DIR__);
-define('LIB_PATH', APPLICATION_PATH . '/application/library');
+define('LIB_PATH', realpath(APPLICATION_PATH . '/../library'));
 define('WEB_HTTP',  "http://{$_SERVER['HTTP_HOST']}/");
 define('WEB_ROOT',  '/');
 
 
 
 $app  = new Yaf_Application(APPLICATION_PATH . "/conf/application.ini");
-$app->run();
+$app->bootstrap()->run();
