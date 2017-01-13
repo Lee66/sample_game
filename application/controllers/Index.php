@@ -66,8 +66,13 @@ class IndexController extends Yaf_Controller_Abstract
         echo json_encode($result);
     }
     /**
-     * 
+     * 获取游戏参数
      */
+    public function playGameAction()
+    {
+        $playerNumber =  
+
+    }
 
 
 
